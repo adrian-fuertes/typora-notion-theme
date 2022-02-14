@@ -5,7 +5,7 @@ A faithful reproduction of the original Notion theme, available in both dark mod
 
 ## Styles
 
-The theme is available in two styles: `original` and `enhanced`. The original style features simpler quotions and tables, mimicing the Notion app. The enhanced style darkens quoations bavkgrounds and adds alternating colors to the table backgrounds, improving visibility.
+The theme is available in two styles: `original` and `enhanced`. The original style features simpler quotations and tables, mimicking the Notion app. The enhanced style darkens quotation backgrounds and adds alternating colors to the table backgrounds, improving visibility.
 
 
 Original style             |  Enhanced Style
@@ -19,7 +19,8 @@ Original style             |  Enhanced Style
 - Launch or restart Typora and choose the theme from the menu.
 
 > Note: This theme has been created and tested in macOS 12, though it should work on Windows as well.
-> Having `SF Mono` or `Fira Code` installed is highly recommended for appropiate code display.
+>
+> Having `SF Mono` or `Fira Code` installed is highly recommended for appropriate code display.
 
 ## Screenshots
 
