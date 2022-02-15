@@ -8,7 +8,7 @@ A faithful reproduction of the original Notion theme, available in both dark mod
 The theme is available in two styles: `original` and `enhanced`. The original style features simpler quotations and tables, mimicking the Notion app. The enhanced style darkens quotation backgrounds and adds alternating colors to the table backgrounds, improving visibility.
 
 
-Original style             |  Enhanced Style
+Original style             | Enhanced style 
 :-------------------------:|:-------------------------:
 ![](assets/images/original-showcase.png)  |  ![](assets/images/enhanced-showcase.png)
 
