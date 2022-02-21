@@ -213,6 +213,7 @@ blockquote {
     margin-left: 1.75px;
     margin-right: 0px;
     border-left: 4px solid var(--text-color);
+    padding: 10px 14px 7px 22px;
 }
 
 blockquote blockquote {
