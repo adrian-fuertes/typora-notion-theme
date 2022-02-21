@@ -143,7 +143,7 @@ ul, ol {
 }
 
 ul:first-child, ol:first-child {
-    margin-top: 0;
+    margin-top: 0.35%;
 }
 
 ul:last-child, ol:last-child {
@@ -213,8 +213,6 @@ blockquote {
     margin-left: 1.75px;
     margin-right: 0px;
     border-left: 4px solid var(--text-color);
-    text-indent: 12px;
-    padding: 10px 14px 7px 10px;
 }
 
 blockquote blockquote {
@@ -286,7 +284,7 @@ kbd {
     background-color: var(--bg-color-dark);
     border: 0;
     border-radius: var(--border-radius);
-    color: var(--light-trait-400);
+    color: var(--text-color-secondary);
     margin-top: 0 !important;
 }
 
