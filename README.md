@@ -14,7 +14,7 @@ Original style             | Enhanced style
 
 ## Install
 
-- Download the [zipped themes package](https://github.com/adrian-fuertes/typora-notion-theme/zipball/master/themes).
+- Download the latest [zipped themes package](https://github.com/adrian-fuertes/typora-notion-theme/releases).
 - Copy the chosen `.css` file(s) to your Typora theme library (you can open the folder in ` preferences > appearance > themes`).
 - Launch or restart Typora and choose the theme from the menu.
 
