@@ -1,4 +1,4 @@
-![header](assets/images/readme-header.jpg)
+![header](assets/images/header-horizontal.png)
 
 # Notion for Typora
 A faithful reproduction of the original Notion theme, available in both dark mode and light mode.
@@ -7,8 +7,10 @@ A faithful reproduction of the original Notion theme, available in both dark mod
 
 The theme is available in two styles: `original` and `enhanced`. The original style features simpler quotations and tables, mimicking the Notion app. The enhanced style darkens quotation backgrounds and adds alternating colors to the table backgrounds, improving visibility.
 
+Additionally, in the original style, code fences more closely resemble those in Notion, having bright red text and a gray background. Inline code is more muted in the enhanced version.
 
-Original style             | Enhanced style 
+
+Original style             | Enhanced style
 :-------------------------:|:-------------------------:
 ![](assets/images/original-showcase.png)  |  ![](assets/images/enhanced-showcase.png)
 
@@ -28,3 +30,6 @@ Original style             | Enhanced style
 ![search-view](assets/images/search-view.png)
 ![light-view](assets/images/sidebar-light.png)
 ![dark-view](assets/images/sidebar-dark.png)
+![darker-view](assets/images/sidebar-darker.png)
+
+
