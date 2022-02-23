@@ -1,4 +1,4 @@
-![header](assets/images/readme-header.jpg)
+![header](assets/images/header-horizontal.jpg)
 
 # Notion for Typora
 A faithful reproduction of the original Notion theme, available in both dark mode and light mode.
