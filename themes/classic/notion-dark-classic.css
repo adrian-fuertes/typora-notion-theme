@@ -4,7 +4,7 @@
     --bg-color-dark: #3f4447;
     --dark-trait: #393c3f;
     --light-trait-100: #3d4145;
-    --light-trait-200: #c70000;
+    --light-trait-200: #3d4145;
     --light-trait-300: #72706b;
     --light-trait-400: #37352f;
     --text-color: #ebebeb;
@@ -45,7 +45,8 @@ body {
 }
 
 code {
-    background-color: #3f4447;
+    color: #ec5757;
+    background-color: #3d4041;
     padding: 0 2px 0 2px;
 }
 
@@ -130,7 +131,7 @@ a:hover {
 }
 
 sup.md-footnote {
-    background-color: #3f4447;
+    background-color: var(--dark-trait);
     color: #b1b3b4;
 }
 
