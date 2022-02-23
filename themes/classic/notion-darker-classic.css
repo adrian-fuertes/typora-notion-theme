@@ -1,36 +1,37 @@
 :root {
-    --primary-color: #ebebeb;
-    --bg-color: #2f3437;
-    --bg-color-dark: #3f4447;
-    --dark-trait: #262525;
+    --primary-color: #c1c1c1;
+    --bg-color: #191919;
+    --bg-color-dark: #202020;
+    --dark-trait: #393c3f;
     --light-trait-100: #3d4145;
-    --light-trait-200: #3d4145;
     --light-trait-300: #72706b;
     --light-trait-400: #37352f;
-    --text-color: #ebebeb;
+    --text-color: #c1c0c1;
     --text-color-secondary: #73726e;
     --text-highlight-color: #fff;
     --text-highlight-bg: rgba(var(--primary-color-rgb), 0.3);
     --select-text-bg-color: #2e5767;
-	--search-select-text-color:#eaedec;
-    --search-select-bg-color: #2e443a;
-    --code-color: #9a6e3a;
+	--search-select-text-color: #eceded;
+    --search-select-bg-color: #24312a;
+    --code-color: #202020;
     --border-radius: 4px;
     --font-size: 14px;
     --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     --monospace: 'SF Mono Medium', 'Fira Code', 'Cousine', 'Consolas', monospace;
     --heading-char-color: var(--light-trait-400);
-    --color-popover-bg-color: var(--text-color);
+/*     --color-popover-bg-color: var(--text-color); */
     --rawblock-edit-panel-bd: var(--bg-color-dark);
     --control-text-color: #afb1b2;
     --meta-content-color: var(--primary-color);
     --primary-btn-border-color: var(--primary-color);
     --side-bar-bg-color: var(--bg-color-dark);
-    --item-hover-bg-color: #4b5053;
-    --active-file-bg-color: #4b5053;
+    --item-hover-bg-color: #2c2c2c;
+    --active-file-bg-color: #2c2c2c;
     --active-file-border-color: var(--bg-color);
     --window-border: 1px solid var(--bg-color);
     --focus-ring-color: transparent;
+    --inline-code-bg-color: #2a2a28;
+    --inline-code-text-color: #ec5757;
 }
 
 html {
@@ -42,12 +43,6 @@ body {
     -webkit-font-smoothing: antialiased;
     color: var(--text-color);
     line-height: 1.6;
-}
-
-code {
-    color: #ec5757;
-    background-color: #3d4041;
-    padding: 0 2px 0 2px;
 }
 
 a {
@@ -92,13 +87,12 @@ h4 {
     font-size: 1.2em;
 }
 
-h5 {
-    font-size: 1em;
+h5    font-size: 1em;
 }
 
 h6 {
     font-size: 1em;
-    color: var(--light-trait-300);
+    color: var(--text-color);
 }
 
 p, blockquote, ul, ol, dl, table {
@@ -131,8 +125,9 @@ a:hover {
 }
 
 sup.md-footnote {
-    background-color: var(--dark-trait);
-    color: #b1b3b4;
+    /* Footnote reference coloring */
+    background-color: #272626;
+    color: #6b696a;
 }
 
 li p.first {
@@ -152,7 +147,8 @@ ul:last-child, ol:last-child {
 }
 
 mark, .ty-file-search-match-text, .md-search-hit {
-    background: #5e3436;
+    /*Secondary search result color*/
+    background: #3e2825;
 	color: #eceded;
 }
 
@@ -160,7 +156,7 @@ mark {
     border-radius: 4px;
     color: #edecea;
     font-weight: inherit;
-    background-color: #4f4029;
+    background-color: #413324;
     padding-left: 4px;
     padding-right: 4px;
     padding-top: 2px;
@@ -215,6 +211,8 @@ blockquote {
     margin-right: 0px;
     border-left: 4px solid var(--text-color);
     padding: 10px 14px 7px 22px;
+    /* change the quote highlight */
+/*     background-color: #252525; */
 }
 
 blockquote blockquote {
@@ -254,6 +252,16 @@ table tr th:last-child, table tr td:last-child {
     margin-bottom: 0;
 }
 
+/* Alternating table: does not look good in dark mode*/
+
+/* table tr:nth-child(2n) {
+    background-color: #2f3437;
+  } */
+
+/* table tr:nth-child(2n + 1) {
+    background-color: #373c3f;
+} */
+
 kbd {
     font-size: 0.875rem;
     background: var(--bg-color-dark);
@@ -262,14 +270,26 @@ kbd {
     color: #acaeaf;
 }
 
-.md-fences, code, tt {
+.md-fences, tt {
     border: none;
-    background-color: #3f4447;
+    background-color: #202020;
     border-radius: var(--border-radius);
     padding: 2px 4px 0px 4px;
     font-size: 0.975em;
     font-weight: medium;
     font-family: var(--monospace);
+}
+
+/* Inline code fences*/
+code {
+    border: none;
+    color: var(--inline-code-text-color);
+    background-color: var(--inline-code-bg-color);
+    border-radius: var(--border-radius);
+    padding: 2px 4px 0px 4px;
+    font-size: 0.975em;
+    font-weight: medium;
+    font-family: var(--monospace); 
 }
 
 .md-fences {
@@ -541,7 +561,7 @@ pre.CodeMirror-line {
 }
 
 .cm-def {
-    color: #eceded!important;
+    color: #c2c0c1!important;
 }
 
 .cm-comment {
@@ -591,9 +611,9 @@ pre.CodeMirror-line {
 
 .file-tree-node.active>.file-node-background {
     background-color: var(--active-file-bg-color);
-    border-left: 0px solid #4b5053!important;
-    border-color: #4b5053!important;
-    background-color: #4b5053!important;
+    border-left: 0px solid var(--active-file-bg-color)!important;
+    border-color: var(--active-file-bg-color)!important;
+    background-color: var(--active-file-bg-color)!important;
 }
 
 .CodeMirror-gutters {
@@ -606,7 +626,7 @@ pre.CodeMirror-line {
     backdrop-filter: saturate(120%) blur(20px) brightness(0.85);
     border: none!important;
     background: none;
-    background-color: #373c3f;
+    background-color: --bg-color-dark;
 }
 
 .code-tooltip {

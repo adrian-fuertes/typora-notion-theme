@@ -30,3 +30,5 @@ Original style             | Enhanced style
 ![search-view](assets/images/search-view.png)
 ![light-view](assets/images/sidebar-light.png)
 ![dark-view](assets/images/sidebar-dark.png)
+
+
