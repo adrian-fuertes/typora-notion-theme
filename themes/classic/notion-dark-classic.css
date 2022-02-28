@@ -410,7 +410,7 @@ kbd {
 }
 
 .CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
-    border-left: 2px solid var(--light-trait-400);
+    border-left: 2px solid var(--text-color);
 }
 
 .sidebar-tabs {
@@ -632,4 +632,66 @@ pre.CodeMirror-line {
     border: none!important;
     backdrop-filter: saturate(120%) blur(20px) brightness(0.85)!important;
     box-shadow: 0 25.6px 57.6px 0 rgba(0, 0, 0, .32), 0 4.8px 14.4px 0 rgba(0, 0, 0, .28)!important;
+}
+/* Windows/Linux unibody mode */
+.megamenu-content,
+.megamenu-opened header {
+    color:  var(--primary-color);
+    background: var(--bg-color-dark);
+}
+
+#recent-file-panel-action-btn {
+    background: inherit;
+    border: 1px var(--light-trait-300) solid;
+}
+
+.megamenu-menu-panel table td:nth-child(1) {
+    color: var(--text-color);
+    background: var(--bg-color-dark);
+}
+
+.megamenu-menu-panel table td:nth-child(2) {
+    color: var(--text-color);
+    background: var(--bg-color-dark);
+}
+
+.megamenu-menu-panel tbody tr:hover td:nth-child(1) {
+    color: var(--text-color);
+    background: var( --active-file-bg-color);
+}
+
+.megamenu-menu-panel tbody tr:hover td:nth-child(2) {
+    color: var(--text-color);
+    background: var( --active-file-bg-color);
+}
+
+.megamenu-menu-panel input[type='text'] {
+    background: inherit;
+    border: 1px var(--control-text-color) solid;
+}
+
+#recent-file-panel-action-btn {
+    background: inherit;
+}
+
+.megamenu-menu,
+#top-titlebar, #top-titlebar *,
+.megamenu-content {
+	background: var(--side-bar-bg-color);
+	color: var(--text-color);
+}
+
+.megamenu-menu-header #megamenu-menu-header-title:before {
+	color:  var(--text-color);
+}
+
+megamenu-back-btn {
+	color: var(--text-color);
+	border-color: var(--text-color);
+}
+
+.megamenu-menu-header #megamenu-menu-header-title,
+.megamenu-menu-header:hover,
+.megamenu-menu-header:focus {
+	color: inherit;
 }
