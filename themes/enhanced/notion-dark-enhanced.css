@@ -687,10 +687,13 @@ pre.CodeMirror-line {
     background: inherit;
 }
 
-.megamenu-menu,
-#top-titlebar, #top-titlebar *,
-.megamenu-content {
+.megamenu-menu, .megamenu-content {
 	background: var(--side-bar-bg-color);
+	color: var(--text-color);
+}
+
+#top-titlebar, #top-titlebar * {
+    background: inherit;
 	color: var(--text-color);
 }
 
@@ -707,4 +710,8 @@ megamenu-back-btn {
 .megamenu-menu-header:hover,
 .megamenu-menu-header:focus {
 	color: inherit;
+}
+
+.megamenu-menu-panel table tr:nth-child(2n + 1) {
+    background-color:  var(--side-bar-bg-color);
 }
