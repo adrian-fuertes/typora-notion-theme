@@ -389,7 +389,7 @@ kbd {
     width: 100%;
     text-align: absolute;
     color: #ffffff;
-    font-size: 12px;
+    font-size: 0.75em;
     font-weight: 750;
 }
 #write .md-task-list-item>input[checked]::after {

@@ -378,7 +378,7 @@ kbd {
     width: 100%;
     text-align: absolute;
     color: var(--bg-color);
-    font-size: 12px;
+    font-size: 0.75em;
     font-weight: 760;
 }
 
