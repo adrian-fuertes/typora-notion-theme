@@ -16,7 +16,7 @@
     --search-select-bg-color: #edf3ec;
     --code-color: #9a6e3a;
     --border-radius: 4px;
-    --font-size: 14px;
+    --font-size: 16px;
     --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     --monospace: 'SF Mono Medium', 'Fira Code', 'Cousine', 'Consolas', monospace;
     --heading-char-color: var(--light-trait-400);
@@ -378,7 +378,7 @@ kbd {
     width: 100%;
     text-align: absolute;
     color: var(--bg-color);
-    font-size: 12px;
+    font-size: 0.75em;
     font-weight: 760;
 }
 
@@ -672,10 +672,13 @@ pre.CodeMirror-line {
     background: inherit;
 }
 
-.megamenu-menu,
-#top-titlebar, #top-titlebar *,
-.megamenu-content {
+.megamenu-menu, .megamenu-content {
 	background: var(--side-bar-bg-color);
+	color: var(--text-color);
+}
+
+#top-titlebar, #top-titlebar * {
+    background: inherit;
 	color: var(--text-color);
 }
 
@@ -692,4 +695,8 @@ megamenu-back-btn {
 .megamenu-menu-header:hover,
 .megamenu-menu-header:focus {
 	color: inherit;
+}
+
+.megamenu-menu-panel table tr:nth-child(2n + 1) {
+    background-color:  var(--side-bar-bg-color);
 }
