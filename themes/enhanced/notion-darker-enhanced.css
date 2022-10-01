@@ -87,7 +87,8 @@ h4 {
     font-size: 1.2em;
 }
 
-h5    font-size: 1em;
+h5 {
+    font-size: 1em;
 }
 
 h6 {
@@ -368,6 +369,7 @@ code {
     vertical-align: middle;
     position: absolute;
     border: 1px solid var(--text-color);
+    margin-top: 0.3rem;
     margin-left: -1.45rem;
     height: 0.95rem;
     width: 0.95rem;
@@ -386,19 +388,15 @@ code {
 }
 
 #write .md-task-list-item>input[checked]::before {
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     content: '✓';
     position: absolute;
-    margin-top: 0.05rem;
-    top: 0;
-    left: 0;
     height: 100%;
     width: 100%;
-    text-align: absolute;
     color: #ffffff;
-    font-size: 0.75em;
-    font-weight: 750;
+    font-weight: 600;
 }
 #write .md-task-list-item>input[checked]::after {
     text-decoration: line-through;
