@@ -116,7 +116,7 @@ code {
 }
 
 #write {
-    ååå max-width: 860px;
+    max-width: 860px;
     margin: 0 auto;
     padding: 30px;
     padding-bottom: 100px;
@@ -246,7 +246,6 @@ a,
     text-decoration: none;
     border-bottom: 0.05em solid;
     border-color: var(--url-underline-color);
-    opacity: 0.6;
     transition: all .1s ease-in;
 }
 
