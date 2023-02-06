@@ -245,7 +245,6 @@ a,
     text-decoration: none;
     border-bottom: 0.05em solid;
     border-color: var(--url-underline-color);
-    opacity: 0.6;
     transition: all .1s ease-in;
 }
 
