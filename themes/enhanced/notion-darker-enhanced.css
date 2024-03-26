@@ -69,7 +69,7 @@
     /* General */
     --font-size: 16px;
     --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-    --monospace: 'SF Mono Medium', 'Fira Code', 'Cousine', 'Consolas', monospace;
+    --monospace: 'SF Mono Medium', 'Consolas', 'Fira Code', 'Cousine', monospace;
     --heading-char-color: var(--light-trait-400);
     --color-popover-bg-color: var(--text-color);
     --rawblock-edit-panel-bd: var(--bg-color-dark);
@@ -140,8 +140,10 @@ code {
     margin-top: 30px;
 }
 
-a {
+#write a {
     color: var(--text-color);
+    text-decoration: none;
+    border-bottom: solid 1px var(--text-color);
 }
 
 h1,
@@ -241,7 +243,6 @@ hr {
     border: none
 }
 
-a,
 .md-def-url {
     color: var(--url-text-color);
     text-decoration: none;
@@ -250,10 +251,6 @@ a,
     transition: all .1s ease-in;
 }
 
-a:hover {
-    text-decoration: none;
-    opacity: 1;
-}
 
 sup.md-footnote {
     color: var(--footnote-text-color);
@@ -495,6 +492,9 @@ tt {
 #write .md-task-list-item>input[checked] {
     background: var(--todo-bg-color);
     border: 1px solid var(--todo-bg-color);
+}
+
+#write .md-task-list-item.task-list-done>p {
     text-decoration: line-through;
 }
 
@@ -504,7 +504,6 @@ tt {
     justify-content: center;
     content: '✓';
     position: absolute;
-    margin-top: 0.05rem;
     top: 0;
     left: 0;
     height: 100%;
@@ -512,10 +511,6 @@ tt {
     color: var(--todo-tick-color);
     font-size: 0.75em;
     font-weight: 600;
-}
-
-#write .md-task-list-item>input[checked]::after {
-    text-decoration: line-through;
 }
 
 /* TODO */
