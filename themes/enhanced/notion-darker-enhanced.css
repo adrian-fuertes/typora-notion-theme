@@ -69,7 +69,7 @@
     /* General */
     --font-size: 16px;
     --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-    --monospace: 'SF Mono Medium', 'Consolas', 'Fira Code', 'Cousine', monospace;
+    --monospace: 'SF Mono Medium', 'Fira Code', 'Cousine', 'Consolas', monospace;
     --heading-char-color: var(--light-trait-400);
     --color-popover-bg-color: var(--text-color);
     --rawblock-edit-panel-bd: var(--bg-color-dark);
@@ -251,6 +251,10 @@ hr {
     transition: all .1s ease-in;
 }
 
+a:hover {
+    text-decoration: none;
+    opacity: 1;
+}
 
 sup.md-footnote {
     color: var(--footnote-text-color);
